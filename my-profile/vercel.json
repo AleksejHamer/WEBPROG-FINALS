@@ -1,7 +1,14 @@
 {
   "version": 2,
+  "outputDirectory": "my-profile/frontend/dist",
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/backend/api/index.ts" },
-    { "source": "/(.*)", "destination": "/frontend/dist/index.html" }
+    { 
+      "source": "/api/(.*)", 
+      "destination": "/my-profile/backend/api/index.ts" 
+    },
+    { 
+      "source": "/(.*)", 
+      "destination": "/my-profile/frontend/dist/index.html" 
+    }
   ]
 }
