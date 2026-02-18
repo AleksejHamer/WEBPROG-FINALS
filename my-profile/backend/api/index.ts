@@ -8,8 +8,7 @@ const server = express();
 export const createServer = async () => {
   const app = await NestFactory.create(AppModule, new ExpressAdapter(server));
   app.enableCors();
-  // Ensure Nest recognizes the /api prefix from the rewrite
-  app.setGlobalPrefix('api'); 
+  // IMPORTANT: Do NOT use app.setGlobalPrefix('api') here
   await app.init();
   return server;
 };
