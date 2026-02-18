@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "outputDirectory": "frontend/dist",
   "rewrites": [
     { 
-      "source": "/api/(.*)", 
+      "source": "/api/guestbook", 
+      "destination": "/backend/api/index.ts" 
+    },
+    { 
+      "source": "/api/guestbook/(.*)", 
       "destination": "/backend/api/index.ts" 
     },
     { 
