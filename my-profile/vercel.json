@@ -2,11 +2,7 @@
   "version": 2,
   "rewrites": [
     { 
-      "source": "/api/guestbook", 
-      "destination": "/backend/api/index.ts" 
-    },
-    { 
-      "source": "/api/guestbook/(.*)", 
+      "source": "/api/(.*)", 
       "destination": "/backend/api/index.ts" 
     },
     { 
